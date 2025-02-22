@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Dancing Script', cursive;
+            
+        }
+        body {
+            background-color: #3F4F44;
+           
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 1rem;
+        }
+        .m {
+            
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 1rem;
+            border-radius: 16px;
+        }
+        .wrap1 {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            background-color: #16C47F;
+            padding: 5rem;
+            border-radius: 16px;
+            position: relative;
+        }
+        .wrap1 p {
+            font-size: 20px;
+        }
+        .img1, .img2 {
+            max-width: 110px;
+            height: auto;
+            position: absolute;
+        }
+        .img1 {
+            top: 2%;
+            left: 10%;
+        }
+        .img2 {
+            bottom: 5%;
+            left: 25%;
+        }
+
+        button {
+            position: absolute;
+            background-color: transparent   ;
+            border: none;
+            font-size: 40px;
+            top: 2%;
+            left: 3%;
+
+        }
+        @media (max-width: 768px) {
+            .wrap1 p {
+                font-size: 18px;
+            }
+        }
+        @media (max-width: 480px) {
+            .m{
+                width: 100%;
+                max-width: 600px;
+            }
+            .wrap1 {
+                max-width: 600px;
+                padding: 2rem;
+            }
+            .wrap1 p {
+                font-size: 14px;
+            }
+            button {
+                font-size: 20px;
+            }
+            .img1, .img2 {
+            max-width: 50px;
+            height: auto;
+            position: absolute;
+            }
+            .img1 {
+                top: 1%;
+                left: 10%;
+            }
+            .img2 {
+                bottom: 5%;
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="m">
+            <div class="wrap1">
+                <p>
+                    Happy Valentine's day Elmaaaa, Ito na naman ako sa letter AHAHAHAHAHA.
+                    Gusto ko sabihin na thank you kasi lagi ka nandyan at thank you rin kasi 
+                    naka catch up kanaaa , sa side mo naman is getssss ko ahhh na doon ay kaka 
+                    catch up pa langgg. Tingin ko wala pang masyadong nangyayaring mabigat para 
+                    may sabihin ako dito, pero maghintay ako kung kailan may chance na magkita 
+                    ulit kasi namimiss kita ehhhh. Ginagawa ko ulit ngayon habang naguusap tayo about sa monday hehehehe. I love youuuuuu ( okay lang na magsabi na diba? 
+                    basta yung wag lang lagi, tama?)
+                </p>
+                <img class="img1" src="assets/images/d.png" alt="hug1">
+                <img class="img2" src="assets/images/heart1.png" alt="heart1">
+
+                <div>
+                   <button onclick="clickButton()" ><i class='bx bx-play-circle'></i></button>
+                </div>
+            </div>  
+        </div>  
+    </div>
+
+    <audio title="Play Audio" id="audio" src="assets/audio/New West - Those Eyes (Lyrics).mp4"></audio>
+
+    <script>
+        function clickButton(){
+            let ad = document.getElementById('audio');
+            ad.play()
+
+        }
+    </script>
+</body>
+</html>
